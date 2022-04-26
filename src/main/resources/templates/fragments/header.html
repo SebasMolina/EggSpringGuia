@@ -1,0 +1,18 @@
+<header th:fragment="header">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a th:href="@{/}" class="navbar-brand">Home</a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Show / Hide Menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link" th:href="@{/users/form}">Create</a></li>
+                    <li class="nav-item"><a class="nav-link" th:href="@{/users}">Users</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
